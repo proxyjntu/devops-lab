@@ -1,0 +1,24 @@
+Step 3: Check pods
+kubectl get pods
+
+
+You should now see:
+
+NAME                                   READY   STATUS    RESTARTS   AGE
+myflaskapp-deployment-xxxxxx           1/1     Running   0          1m
+
+Step 4: Access your Flask app
+
+Get service NodePort:
+
+kubectl get svc
+
+
+Example:
+
+5000:32119/TCP
+
+
+Access in browser or CMD:
+
+curl http://localhost:32119
