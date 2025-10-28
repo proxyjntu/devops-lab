@@ -1,0 +1,3 @@
+in docker goto settings>enable kubernetes
+apply+restart
+verify kubernetes =>kubectl version
